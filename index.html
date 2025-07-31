@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My landing page</title>
+  <style>
+   
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e9efc8;
+  margin: 0px;
+  padding: 0;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url(/assets/bg-tablet-pattern.svg);
+   background-repeat: no-repeat;
+  background-position: 200px 0px;
+  background-size: 400px;
+  background-position-x: right;
+  
+} 
+.bar{
+    text-decoration: none;
+    display: flex;
+} 
+ .g-container{
+   display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 30px; 
+   background-image: url(/assets/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+   background-position: bottom;
+  background-size: 100px;
+  background-position-y: top;
+  background-position-x: center bottom;  
+} 
+.image{
+  padding: 40px;
+  font-size: 25px;
+  color: white;
+  font-weight: 500; 
+  transition: 0.1s ease; 
+}
+.image:hover{
+  color: orangered;
+  box-shadow: 0 0 50px rgb(0, 255, 76), 0 0 20px orangered;
+  transform: scale(1.1);
+  text-shadow: 0 0 50px rgb(0, 255, 76), 0 0 20px orangered;
+}
+.i{
+  color: orangered;
+}
+.bar{
+  justify-content: space-between;
+  gap: 20px;
+}
+.bar a{
+  text-decoration: none;
+}
+.bar a:hover{
+  border-bottom: 3px solid orangered;
+}
+.btn a{
+  text-decoration: none;
+ 
+}
+.get-started-btn{
+  background-color: black;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+.get-started-btn:hover{
+  background-color: rgb(241, 237, 235);
+   box-shadow: 0 0 25px orangered;
+}   
+.container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 10px 10%;
+      align-items: center;
+      gap: 3px; 
+    }
+    .container-text{
+      max-width: 500px;
+      flex: 1;
+    }
+    .container-text h1{
+      font-size: 30px;
+      margin-bottom: 20px; 
+    }
+    .container-text p{
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+       .bac{
+         background-color: black;
+         color: white;
+         padding: 12px 30px;
+         font-size: 16px;
+         border: none;
+         border-radius: 8px;
+         cursor: pointer;
+      }
+      .bac:hover{
+        background-color: rgb(241, 237, 235);
+        box-shadow: 0 0 25px orangered;
+      } 
+     .container img{
+      flex: 1;
+       text-align: center;
+      max-width: 400px;
+      align-items: center;
+      margin-left: 600px; 
+      margin-bottom: 40px;
+     margin-top: -200px;
+      
+    } 
+     .feature{
+      padding: 60px 10%;
+      justify-content: center;
+      flex: 1;
+      margin: 0 auto 10px;
+       margin-top: -50px; 
+    }  
+    .feature h2{
+      font-size: 40px;
+      padding-top: 10px;
+    }
+    .feature p{
+      font-size: 15px;
+    }
+    .feature-text{
+      flex: 1;
+    }
+    .feature-list{
+      flex: 1;
+      min-height: 90px;
+      margin-top: -100px;
+    }
+     .feature-item{
+       display: flex;
+       align-items: flex-start;
+      padding-left: 700px;
+      padding-bottom: 10px;
+      flex: 1;
+    }
+    .feature-number{
+      background-color: orange;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      width: 30px;
+      height: 30px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      padding: 3px;
+      margin-right: 15px;
+    }
+    .testimonials{
+       justify-content: center;
+      text-align: center; 
+      margin-top: -50px;
+      
+    }
+    .testimonial{
+      justify-content: center;
+      text-align: center;
+      display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));   
+       margin: 0px;
+       margin-top: -40px;
+    }
+    .head{
+      background-color: rgb(242, 245, 245);
+      padding: 20px;
+      margin: 30px;
+    }
+   .te{
+    background-color: rgb(241, 246, 246);
+    padding: 20px;
+    margin: 30px;
+   }
+   .let{
+    background-color: rgb(235, 242, 242);
+    padding: 20px;
+    margin: 30px;
+   }
+   .letty{
+    padding-bottom: 20px;
+   }
+   .tes{
+    padding-bottom: 20px;
+   }
+  
+   .bat a{
+    text-decoration: none;
+    text-align: center;
+    align-items: center; 
+    padding: 20px;
+    margin-bottom: 500px;
+   }       
+.ba{
+    background-color: rgb(21, 20, 20);
+    color: white;
+    padding: 20px 40px;
+    font-size: 16px;
+     border: none; 
+    border-radius: 8px;
+    cursor: pointer;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: -30px;
+}
+.ba:hover{
+     background-color: rgb(241, 237, 235);
+     box-shadow: 0 0 25px orangered;
+}
+.bat{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.las{
+  background-color: orange;
+  padding: 10px;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 0px;
+  margin-top: -5px;
+}
+.las a{
+  color: white;
+  text-align: start;
+}
+.bu{
+  text-align: end;
+}
+.shoe{
+   text-align: center; 
+  align-items: end;
+  padding-left: 50px;
+  background-color: rgb(36, 34, 34);
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 1005px;
+  width: 100px;
+  padding-right: 5px;
+  margin-left: 900px;
+  
+}
+.shoe a{
+  text-align: end;
+  width: 800px;
+}
+.shoe:hover{
+    background-color: rgb(222, 211, 207);
+    box-shadow: 0 0 25px orangered;
+}
+.tas{
+  background-color: rgb(10, 10, 10);
+   padding: 70px 10%;  
+  color: rgb(20, 19, 19);
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  list-style-type: none;
+}
+.sat{
+  padding-right: 200px;
+  padding-bottom: 200px;
+  margin-top: -5px;
+  margin-bottom: -300px;
+  list-style-type: none;
+   padding-left: 0; 
+   text-align: center;
+}
+.met{
+   padding-left: 250px; 
+  padding-bottom: 150px;
+  margin-top: -80px;
+}
+.sat a{
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+  gap: 20px;
+}
+.met a{
+  text-decoration: none;
+  gap: 50px;
+  bottom: 20px;
+}
+.o{
+  margin-bottom: -300px;
+}
+footer{
+  margin-bottom: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.subscribe input{
+   padding: 8px;
+   border-radius: 20px;
+   border: none;
+   outline: none;
+   color: white;
+}
+.subscribe button{
+  padding: 8px 6px;
+  background-color: orangered;
+  border: none;
+  border-radius: 20px;
+  color: white;
+   margin-left: 8px;
+   width: 30px; 
+}
+.subscribe input:hover{
+    background-color: rgb(239, 76, 17);
+    box-shadow: 0 0 35px orangered;
+    color: white;
+}
+.subscribe button:hover{
+     background-color: rgb(20, 19, 19);
+    box-shadow: 0 0 35px orangered;
+    color: white;
+}
+.test{
+  margin-top: -30px;
+}
+.tes{
+  margin-top: -30px;
+}
+.letty{
+  margin-top: -30px;
+}
+  </style>
+</head>
+<body>
+  <div class="loy">
+  <!-- header -->
+  <header>
+  <div class="g-container">
+    <div class="image">
+    <img src="/assets/logo.svg" class="i">
+    </div>
+    <nav class="bar">
+      <a href="#">Pricing</a>
+       <a href="#">Product</a>
+       <a href="#">About us</a>
+        <a href="#">Careers</a>
+        <a href="#">Community</a>
+    </nav>
+    <div class="btn">
+      <button class="get-started-btn">Get started</button>
+    </div>
+</header>
+
+    <!-- main -->
+    <section class="container">
+      <div class="container-text">
+        <h1>Bring everyone together to bild better products</h1>
+        <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+        <div class="bt">
+         <button class="bac">Get started</button>
+      </div>
+        <img src="/assets/illustration-intro.svg">
+     </section> 
+
+
+
+    <section class="feature"> 
+     <div class="feature-wrapper"> 
+    <div class="feature-text">
+   <h2>What's different about Manage?</h2>
+    <p>Manage provides all the functionality your team needs, without the complexity.<br> Our software is tailor-made for modern digital product teams.</p>
+    </div>
+     <div class="feature-list"> 
+    <div class="feature-item">
+      <div class="feature-number">01</div>
+       <div>
+        <strong>Track company-wide progress</strong>
+        <p>Track progress at all levels, from milestones to details. Keep the big picture in sight.</p>
+       </div> 
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-number">02</div>
+      <div>
+        <strong>Advanced built-in reports</strong>
+        <p>Estimate delivery, track goals, and share customizable reports.</p>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-number">03</div>
+      <div>
+        <strong>Everything you need in one place</strong>
+        <p>Stop switching tools. Communicate, track, store, and collaborate all in one.</p>
+      </div>
+    </div> 
+      </div>
+    </div>
+   </section>
+ 
+   <section class="testimonials">
+    <h2>What they've said</h2>
+   </section>
+    <main class="testimonial">
+     <div class="head">
+    <div class="test"> 
+    <img src="/assets/avatar-anisha.png">
+    </div>
+    <strong>Anisha Li</strong>
+    <p>"Manage has supercharged our team's workflow. The ability to maintain visibility keeps everyone motivated."</p>
+    
+    </div>
+
+    <div class="te">
+      <div class="tes">
+        <img src="/assets/avatar-ali.png">
+         </div>
+        <strong>Ali bravo</strong>
+         <p>"We’ve canceled many subscriptions since using Manage. there is no more  cross-channel confusion and everyone is much more focused."</p>
+     
+    </div>
+
+    <div class="let">
+      <div class="letty">
+      <img src="/assets/avatar-richard.png">
+       </div>
+      <strong>Richard Watts</strong>
+      <p>"Manage allow us to provide structure and product keeps us organised and focused. I can't stop recommending it to everyone I talk to."</p>
+    </div>
+     </main>
+     <div class="bat">
+     <button class="ba">Get started</button>
+     </div>
+
+
+     <div class="las">
+      <h2>Simplify how your team works.</h2>
+      <div class="shoe">
+       <a class="#">Get started</a>
+      </div>
+      
+     </div>
+     <footer>
+     <div class="tas">
+      <div class="come">
+      <img src="/assets/logo.svg">
+      <P>
+      
+        <div class="o" style="margin-top: 50px;">
+        <a href="#"><img src="/assets/icon-facebook.svg"></a>
+        <a href="#"><img src="/assets/icon-youtube.svg"></a>
+        <a href="#"><img src="/assets/icon-twitter.svg"></a>
+        <a href="#"><img src="/assets/icon-pinterest.svg"></a>
+        <a href="#"><img src="/assets/icon-instagram.svg"></a>
+      </P>
+      </div>
+      </div>
+    
+     
+       <div class="sat" style="justify-content: space-between;">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">products</a></li>
+      <li><a href="#">About</a></li>
+     </ul>
+     <div class="met">
+     <ul>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Community</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+     </ul>
+     </div>
+       </div>
+    <div class="subscribe">
+      <input type="email" placeholder="Updates in your inbox...">
+      <button>Go</button>
+    
+      <p style="width: 100%; text-align: center; margin-top: 50px; font-size: 12px; color: white;">Copyright 2025.All rights reserved</p>
+      
+    </div>
+     </div>
+     </footer>
+     <div class="log">
+      
+     </div>
+     
+     </div>
+    </div>
+  
+  </div>
+</div>
+</body>
+</html>
+  
+    
